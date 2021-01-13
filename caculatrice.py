@@ -37,10 +37,10 @@ def insertNumber(nb):
     result.insert(0, f"{content}{nb}")
 def insertSigne(signe):
     if signe != '=':
-        
         content = result.get()
-        result.delete(0, tk.END)
-        ecran['text'] = f"{ecran['text']} {content} {signe}"
+        if len(content) > 0:
+            result.delete(0, tk.END)
+            ecran['text'] = f"{ecran['text']} {content} {signe}"
     else:
         calcul()
 
