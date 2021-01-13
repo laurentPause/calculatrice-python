@@ -1,5 +1,6 @@
 import tkinter as tk
 window = tk.Tk()
+window.title('Calculatrice Python')
 
 # Frames
 
